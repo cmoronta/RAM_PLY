@@ -1,0 +1,14 @@
+# Program to add two numbers
+# inputs are in r1 and r2
+# output, as always, is in r1
+#
+# initialize input registers
+r1 = 9
+R2 = 3
+#
+# begin program
+n0 R2 JMP N1b
+   INC R1
+   DEC R2
+   JMP N0a
+N1 CONTINUE

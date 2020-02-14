@@ -1,0 +1,17 @@
+R1=3			
+R2=5
+
+	MOV R3, R1		
+N1	DEC R2			
+	R2 JMP N4b
+	MOV R6, R3		
+	MOV R5, R1		
+N2	DEC R5			
+	R5 JMP N1a		
+	MOV R4, R6		
+N3	R4 JMP N2a		
+	INC R3			
+	DEC R4			
+	JMP N3a
+N4	MOV R1, R3		
+	CONTINUE

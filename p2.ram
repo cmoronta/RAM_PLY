@@ -1,0 +1,15 @@
+R1=7
+R2=3
+
+        MOV R3, R2
+N1      R1 JMP N4b
+        MOV R2, R3
+N2      R2 JMP N3b
+        DEC R1
+        R1 JMP N1a
+        DEC R2
+        JMP N2a
+N3      INC R4
+        JMP N1a
+N4      MOV R1, R4
+        CONTINUE
